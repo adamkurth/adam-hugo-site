@@ -1,12 +1,12 @@
-baseURL = "https://adammkurth.netlify.app"
-theme = "hugo-apero"
+baseURL      = "https://adammkurth.netlify.app"
+theme        = "hugo-apero"
 languageCode = "en"
-title = "Adam Kurth's Website"
-author = "Adam Kurth"
-copyright = "" # set to override the auto generated copyright using org info and now year
+title        = "Home"
+author       = "Adam Kurth"
+copyright    = ""
 googleAnalytics = ""
 #disqusShortname = "" # see params.comments to use utterances or giscus instead of Disqus
-metaDataFormat = "yaml"
+metaDataFormat  = "yaml"
 footnoteReturnLinkContents = "&#8617;" # ↩
 # set deliberately low for testing choose your preffered number based on the blog layout you've chosen
 [pagination]
@@ -32,13 +32,13 @@ enableEmoji = true
   orgName = "RStudio"
   orgLocal = "Anywhere"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  favicon = "/img/favicon.ico"
-  logo = "/img/blogophonic-mark-dark.png"
-  mainSections = ["blog", "project", "talk"]
+  favicon     = "/img/github-logo.png"   # put a 32×32 icon or remove this line
+  
+  mainSections = ["about", "projects", "patient-advocacy", "contact"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
-  socialInHeader = false
+  socialInHeader = true
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
@@ -49,7 +49,7 @@ enableEmoji = true
   # use a built-in color theme
   # one of: earth / forest / grayscale / magma / paper / peach / plum /
   #         poppy / primer / sky / violet / water 
-  theme = "sky"
+  theme = "plum"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -62,12 +62,13 @@ enableEmoji = true
   # serif options: Fraunces / EB Garamond / Bitter
   # sans-serif options: Commissioner / Atkinson Hyperlegible / Metropolis
   # if you import your own fonts, name them here too
-  customtextFontFamily = "Commissioner"
+  customtextFontFamily    = "Commissioner"
   customheadingFontFamily = "Fraunces"
+  
   # alternatively, leave empty and select basic font options: sans-serif or serif
   # for more http://tachyons.io/docs/typography/font-family/
   textFontFamily = "sans-serif"
-  headingFontFamily = "serif"
+  headingFontFamily = "sans-serif"
 
   # Specify use of utterances, giscus or disqus
   comments = "utterances"
@@ -103,90 +104,47 @@ enableEmoji = true
   # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
+  
   [[params.social]]
-      icon      = "github" # icon name without the 'fa-'
+      icon      = "github"
       icon_pack = "fab"
-      url       = "https://github.com/apreshill/apero"
+      url       = "https://github.com/adamkurth"
   [[params.social]]
-      icon      = "bluesky" # icon name without the 'fa-'
+      icon      = "linkedin"
       icon_pack = "fab"
-      url       = "https://bsky.app/"
+      url       = "www.linkedin.com/in/adam-kurth"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
+      icon      = "orcid"
       icon_pack = "fab"
-      url       = "https://www.instagram.com/explore/tags/apero/"
-  [[params.social]]
-      icon      = "x-twitter" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://twitter.com/hashtag/apéro"
-  [[params.social]]
-      icon      = "impactstory" # icon name without the 'fa-'
-      icon_pack = "ai"
-      url       = "https://impactstory.org/u/0000-0002-8082-1890"
-  [[params.social]]
-      icon      = "orcid" # icon name without the 'fa-'
-      icon_pack = "ai"
-      url       = "http://orcid.org/0000-0002-8082-1890"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
+      url       = "https://orcid.org/0009-0001-7810-5713"
 
 [taxonomies]
   category = "categories"
-  series = "series"
-  tag = "tags"
+  tag      = "tags"
 
 [menu]
-  # Configure header 
   [[menu.header]]
-    name = "About"
-    title = "About Apéro"
-    url = "/about/"
+    name  = "About"
+    url   = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Blog"
-    title = "Blog"
-    url = "/blog/"
+    name  = "Projects"
+    url   = "/projects/"
     weight = 2
   [[menu.header]]
-    name = "Projects"
-    title = "Project Portfolio"
-    url = "/project/"
-    weight = 3
-  [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
+    name  = "CV"
+    url   = "/files/cv.pdf"
     weight = 4
   [[menu.header]]
-    name = "A collection"
-    title = "A collection"
-    url = "/collection/"
-    weight = 5
-  [[menu.header]]
-    name = "Elements"
-    title = "Element Page"
-    url = "/elements/"
-    weight = 6
-    
-  # Configure footer  
-  [[menu.footer]]
-    name = "License"
-    title = "License"
-    url = "/license/"
-    weight = 1
-  [[menu.footer]]
-    name = "Contact"
-    title = "Contact form"
-    url = "/contact/"
-    weight = 2
-  [[menu.footer]]
-    name = "Contributors"
-    title = "Contributors"
-    url = "/contributors/"
+    name  = "Advocacy"
+    url   = "/patient-advocacy/"
     weight = 3
-
+  [[menu.header]]
+    name  = "Contact"
+    url   = "/contact/"
+    weight = 3
+    
+  [[menu.header]] 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
   [privacy.disqus]
