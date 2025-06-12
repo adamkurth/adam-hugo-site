@@ -1,6 +1,6 @@
 ---
 # ----------  FRONT MATTER  ----------
-title: "Adam Kurth"
+title: "Adam M. Kurth"
 subtitle: "PhD Student · Biostatistics @ Brown"
 description: "I am an incoming Ph.D. student in the Brown University School of Public Health, Department of Biostatistics.
   My research interests include Bayesian modeling, nonparametrics, causal inference, machine learning, and applications in public health and epidemiology.
