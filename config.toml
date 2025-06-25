@@ -32,7 +32,7 @@ enableEmoji = true
   orgName = "RStudio"
   orgLocal = "Anywhere"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  favicon     = "/img/github-logo.png"   # put a 32×32 icon or remove this line
+  # favicon     = "/img/github-logo.png"   # put a 32×32 icon or remove this line
   
   mainSections = ["about", "projects", "patient-advocacy", "contact"]
   navallcaps = true
