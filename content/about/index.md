@@ -18,7 +18,7 @@ I also hold a B.S. in Mathematics (Statistics) from ASU, where I graduated *summ
 
 ## Education
 - **Ph.D. in Biostatistics**, Brown University (*Present*)  
-- **M.S. in Statistics**, Arizona State University (May 2025)  
+- **M.S. in Statistics**, Arizona State University (*May 2025*)  
   _Accelerated Masters, Academic Track_  
 - **B.S. in Mathematics (Statistics)**, Arizona State University (*August 2024*)  
   _Minor in Philosophy, Summa Cum Laude_
