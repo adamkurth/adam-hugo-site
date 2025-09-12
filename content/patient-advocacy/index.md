@@ -7,30 +7,45 @@ categories: []
 tags: []
 ---
 
+# Patient Advocacy
+*Transforming personal health challenges into meaningful advocacy for transplant awareness, patient rights, and equitable healthcare access.*
+
+---
+
+## 🎤 Speaking & Media
+
 ### Voice of the Patient — AZBIO
-In this talk, I share insights from my long-term health journey and personal reflections.
+*Sharing insights from my transplant journey and the intersection of patient experience with biomedical innovation*
 
 {{< youtube YXIQjwk-TZU >}}
 
----
-
-### ASU Graduate Overcomes Health Challenges
-Click below to read about my academic and health journey, featured by ASU News:
+**Featured: ASU Graduate Overcomes Health Challenges**  
+*From ICU to graduation stage — how statistics became my path through adversity*
 
 [![ASU Graduate Overcomes Health Challenges](/img/asuarticle.jpeg)](https://news.asu.edu/20240427-sun-devil-community-math-and-stats-grad-beats-odds-overcoming-serious-health-issues)
-*How one student's resilience and passion for statistics helped him succeed after serious health setbacks.*
 
 ---
 
-
-### Donate Life Arizona
-I am a proud advocate for organ donation and transplantation, sharing my story to raise awareness and encourage others to register as organ donors.
+### 💚 Donate Life Arizona Partnership
+*Statewide advocate for organ donation awareness*
 
 ![Adam Kurth featured by Donate Life Arizona in 2021](/img/1733204340399.jpeg)
 
-In September 2021, I was featured by [Donate Life Arizona](https://www.donatelifeaz.org/) in a statewide campaign on the impact of organ, eye, and tissue donation. As a liver transplant recipient, I shared my story to encourage students and young adults to register as organ donors and to raise awareness about the importance of transplantation in saving lives.
+Featured in [Donate Life Arizona's](https://www.donatelifeaz.org/) 2021 Campus Challenge, reaching thousands of college students across Arizona. As a liver transplant recipient, I help bridge the gap between personal stories and life-saving action.
 
-This initiative was part of the Campus Challenge in partnership with Arizona colleges and universities.
+---
+
+### 🏥 COTA Partnership
+*Community-driven support for transplant families*
+
+Since 2020, **COTA for Adam K** has exemplified how grassroots fundraising can transform post-transplant care. Our campaign with the [Children's Organ Transplant Association](https://cota.org/cotaforadamk/) demonstrates the power of community in healthcare advocacy.
+
+**Key Milestones:**
+- **2022 National Calendar Feature** — Shared transplant story nationwide
+- **The Mulligan Golf Tournament** — Community-organized fundraiser bringing supporters together
+- **Ongoing Impact** — Supporting equitable access to post-transplant care
+
+<iframe src="https://cota.org/cotaforadamk/" width="100%" height="600" style="border:1px solid #ccc; border-radius: 8px;" title="COTA for Adam K preview"></iframe>
 
 <!-- Instagram Post 1 -->
 <div style="margin-bottom: 1.5em;">
@@ -78,20 +93,21 @@ For more information or to support the cause, visit [cota.org/cotaforadamk](http
 
 ---
 
-### My Liver Transplant – Adam’s Story
-My journey with transplantation and recovery, featured by Phoenix Children’s Hospital:
+### 📖 Patient Stories & Conversations
 
-[![My Liver Transplant – Adam’s Story](/img/pch.jpeg)](https://phoenixchildrens.org/articles-faqs/blog/my-liver-transplant-adams-story)
-*Featured story on my experience overcoming life-threatening illness and pursuing education in STEM.*
+**Phoenix Children's Hospital Feature**  
+*My transplant journey from patient perspective*
 
----
+[![My Liver Transplant – Adam's Story](/img/pch.jpeg)](https://phoenixchildrens.org/articles-faqs/blog/my-liver-transplant-adams-story)
 
-### Interview with Christian Gardner
-In this conversation, I discuss my pathway through mathematics and statistics, the role of research in public health, and advice for aspiring statisticians.
+**Interview with Christian Gardner**  
+*Mathematics, statistics, and space exploration through a patient-researcher lens*
 
 [![Interview with Christian Gardner](/img/nasa/nasa-logo.png)](https://youtu.be/Ni4Asr7L30Y?si=HHB7Z2IaNPwNf6hy)
 
-*Exploring the intersections of math, stats, and space exploration through personal and academic experiences.*
+**APHON Arizona Chapter Conference**  
+*Patient panel discussing healthcare outcomes research and nursing perspectives*
 
-### Patient Panel with APHON, AZ Chapter
-Spoke at the Association of Pediatric Hematology/Oncology Nurses (APHON) AZ Chapter annual conference, sharing patient perspectives and insights into healthcare outcomes research.
+---
+
+*Ready to make a difference? [Register as an organ donor](https://www.donatelife.net/) or explore how you can support transplant families through [COTA](https://cota.org/).*
