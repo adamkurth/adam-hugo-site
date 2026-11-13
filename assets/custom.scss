@@ -1,1 +1,255 @@
-// Override this file to add your own SCSS styling.
+// ---------------------------------------------------------------------------
+// Site-specific styling layered on top of hugo-apero.
+// Imported last by assets/scaffold.scss, so the $...Custom palette variables
+// from assets/hex-colors.scss are in scope and these rules win on conflicts.
+// ---------------------------------------------------------------------------
+
+// Slightly tighter, more readable body copy than the theme default.
+.post-body {
+  font-size: 1.05rem;
+
+  > p {
+    max-width: 38rem;
+  }
+}
+
+// The theme renders the page title at .f1 (3rem) with fw4. For a professional
+// profile a smaller, heavier title reads better.
+.post-header h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+// Section rules under h2 on ordinary content pages.
+.post-body > h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $borderColorCustom;
+}
+
+.post-body > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.35rem;
+}
+
+// ---------------------------------------------------------------------------
+// Download / action button row (used on the CV page)
+// ---------------------------------------------------------------------------
+.doc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 2.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doc-actions a {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid $buttonBgColorCustom;
+  background-color: $buttonBgColorCustom;
+  color: $buttonTextColorCustom !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonHoverBgColorCustom;
+    border-color: $buttonHoverBgColorCustom;
+    color: $buttonHoverTextColorCustom !important;
+  }
+}
+
+// Secondary (outline) variant.
+.doc-actions a.secondary {
+  background-color: transparent;
+  color: $buttonBgColorCustom !important;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonHoverBgColorCustom;
+    border-color: $buttonHoverBgColorCustom;
+    color: $buttonHoverTextColorCustom !important;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Right-aligned date chip. Global so it works in headings on any page
+// (About, Advocacy, CV). Outside .cv it floats; inside .cv the flex layout
+// below positions it instead, so the float is cleared there.
+// ---------------------------------------------------------------------------
+.cv-date {
+  font-family: $customtextFontFamily;
+  font-size: 0.74rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $footerTextColorCustom;
+  float: right;
+  margin-left: 1.25rem;
+}
+
+// ---------------------------------------------------------------------------
+// CV page
+//
+// Scoped to .cv (a wrapper div in content/cv/index.md) so the denser type
+// scale here never leaks onto the other pages.
+// ---------------------------------------------------------------------------
+.cv {
+  // The theme's heading anchor links are visual clutter on a CV, and hiding
+  // them also removes a stray flex item from the h3 date rows.
+  a > svg.anchor-symbol {
+    display: none;
+  }
+
+  // Section headings: small, letterspaced, ruled.
+  h2 {
+    font-family: $customtextFontFamily;
+    font-size: 0.82rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $footerTextColorCustom;
+    margin: 2.75rem 0 1.1rem 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid $borderColorCustom;
+  }
+
+  // Institution / entry headings carry an optional right-aligned date.
+  //
+  // NOTE: the theme's render-heading hook appends an anchor <a> to every
+  // heading, so an h3 with a date has THREE flex items (text, date, anchor).
+  // justify-content: space-between would strand the date in the middle, so
+  // the date is pushed right with an auto margin instead and the anchor
+  // trails it.
+  h3 {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    font-size: 1.1rem !important;
+    font-weight: 600;
+    margin: 1.6rem 0 0.2rem 0;
+  }
+
+  // Role / sub-entry line: same flex treatment, lighter weight.
+  .cv-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    margin: 0.9rem 0 0.2rem 0;
+    line-height: 1.4;
+  }
+
+  .cv-role {
+    font-style: italic;
+  }
+
+  // Inside the CV the flex rules above place the date, so drop the float and
+  // push it to the right edge with an auto margin.
+  .cv-date {
+    float: none;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  // Body paragraphs under an entry: indented slightly, measure-limited.
+  p {
+    max-width: 42rem;
+    margin: 0.4rem 0 0.9rem 0;
+    line-height: 1.55;
+  }
+
+  // Compact lists.
+  ul,
+  ol {
+    max-width: 42rem;
+    margin: 0.4rem 0 1rem 0;
+    padding-left: 1.15rem;
+    line-height: 1.5;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  // "Skills"-style label: value lines.
+  .cv-defs {
+    max-width: 42rem;
+    margin: 0.4rem 0 1rem 0;
+
+    dt {
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $footerTextColorCustom;
+      margin-top: 0.85rem;
+    }
+
+    dd {
+      margin: 0.15rem 0 0 0;
+      line-height: 1.5;
+    }
+  }
+
+  // A quiet note line (e.g. advisor, instructor).
+  .cv-meta {
+    font-size: 0.92rem;
+    color: $footerTextColorCustom;
+    margin: 0.1rem 0 0.5rem 0;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Print: the CV page should print as a clean document.
+// ---------------------------------------------------------------------------
+@media print {
+  .site-header,
+  .site-footer,
+  .doc-actions,
+  .post-footer,
+  .post-details {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 10.5pt;
+  }
+
+  .page-main {
+    padding: 0 !important;
+  }
+
+  .cv h2 {
+    color: #000 !important;
+    margin-top: 1.4rem;
+  }
+
+  .cv h3,
+  .cv .cv-row {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+}

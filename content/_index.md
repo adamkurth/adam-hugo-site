@@ -1,20 +1,18 @@
 ---
-# ----------  FRONT MATTER  ----------
 title: "Adam M. Kurth"
-subtitle: "PhD Student · Biostatistics @ Brown"
-description: "I am an incoming Ph.D. student in the Brown University School of Public Health, Department of Biostatistics.
-  My research interests include Bayesian modeling, nonparametrics, causal inference, machine learning, and applications in public health and epidemiology.
-  I aim to investigate complex patient outcomes in clinical domains such as transplantation and cancer, using flexible Bayesian and causal models to address treatment effect heterogeneity, confounding, and to quantify individualized risk.
-  Ultimately, I hope to develop methods that support personalized clinical decision-making and promote health equity."
+subtitle: "Ph.D. Student in Biostatistics · Brown University"
+description: "I work on causal inference with real-world healthcare data — target trial emulation, inverse probability weighting, and survival analysis — to answer questions clinicians face, such as when a cancer immunotherapy can safely be discontinued.
+
+Earlier work spans Bayesian tree-based models for perinatal risk (M.S., Arizona State) and deep learning and NLP for human reliability analysis at NASA Glenn Research Center."
 images:
-  - img/home-profile.jpeg
-image_left: false          # put photo on the right
-text_align_left: true      # keep text on the left
-show_social_links: true    # pulls icons from config.toml
+  - img/headshot-web.jpeg
+image_left: false          # photo on the right
+text_align_left: true      # text on the left
+show_social_links: true    # icons come from config.toml [[params.social]]
 show_action_link: true
-action_link: /about/
-action_label: "About me →"
+action_link: /cv/
+action_label: "CV &amp; résumé →"
 action_type: button        # text | button
-type: home                 # ← activates the hero layout
+type: home                 # activates the hero layout
 draft: false
 ---

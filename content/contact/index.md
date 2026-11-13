@@ -1,31 +1,34 @@
 ---
 title: Contact
-author: Package Build
+subtitle: "Open to research collaborations and summer 2027 internships."
+author: "Adam M. Kurth"
 date: ''
 slug: []
 categories: []
 tags: []
 ---
 
-I'm always excited to connect with fellow researchers, collaborators, and anyone interested in the intersection of statistics, public health, and epidemiology. Whether you're looking to discuss potential collaborations, share insights about ongoing projects, or explore opportunities in health informatics and patient advocacy, I'd love to hear from you!
+The fastest way to reach me is email. I'm happy to hear from researchers and collaborators, from teams working on causal inference or real-world evidence, and from anyone curious about a path into biostatistics.
 
-Don't hesitate – I believe the best ideas often emerge from meaningful conversations and diverse perspectives.
+I'm currently looking for **summer 2027 internships** in biostatistics, causal inference, and real-world evidence — in industry, government, or academic settings.
 
----
+## Email
 
-### 📧 Get in Touch  
-**Primary Email:** [adam_kurth@brown.edu](mailto:adam_kurth@brown.edu)  
-*I typically respond within 24-48 hours during business days*
+**[adam_kurth@brown.edu](mailto:adam_kurth@brown.edu)**
 
----
+I usually reply within a couple of business days.
 
-### 🌐 Let's Connect Online
+## Elsewhere
 
-**Professional Networking:**
 - [LinkedIn](https://www.linkedin.com/in/adam-kurth)
-
-**Research & Development:**
 - [GitHub](https://github.com/adamkurth)
-- [Google Scholar](https://scholar.google.com/citations?user=kTkTEwIAAAAJ&hl=en&authuser=1)
-- [ORCID](https://orcid.org/0000-0002-8082-1890)
-- [ResearchGate](https://www.researchgate.net/profile/Adam-Kurth-2?ev=hdr_xprf)
+- [Google Scholar](https://scholar.google.com/citations?user=kTkTEwIAAAAJ&hl=en)
+- [ORCID](https://orcid.org/0009-0001-7810-5713)
+- [ResearchGate](https://www.researchgate.net/profile/Adam-Kurth-2)
+
+## Documents
+
+<div class="doc-actions">
+<a href="/files/cv.pdf">Download CV (PDF)</a>
+<a href="/files/resume.pdf" class="secondary">Download résumé (PDF)</a>
+</div>

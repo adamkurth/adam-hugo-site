@@ -1,0 +1,41 @@
+{{/*
+  Project override of themes/hugo-apero/layouts/_default/single.html.
+
+  This is a static professional profile, not a blog, so two partials from the
+  theme's version are deliberately left out:
+
+    * shared/post-details.html    - renders "Posted on", "Length: N minute
+                                    read", categories/tags and "See Also";
+                                    all meaningless on an About or CV page.
+    * shared/post-pagination.html - renders prev/next links that chain the
+                                    pages together as if they were posts
+                                    (e.g. "<- Contact" / "Research ->").
+
+  Everything else matches the theme. If you later add a blog section, posts
+  will still use the theme's own single.html unless you point them here.
+*/}}
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">{{ .Title }}</h1>
+        {{ if .Params.subtitle }}<h4 class="f4 mt0 mb4 lh-title measure">{{ .Params.subtitle }}</h4>{{ end }}
+
+      {{ if .Params.links }}
+      <div class="ph0 pt5">
+        {{ partial "shared/btn-links.html" . }}
+      </div>
+      {{ end }}
+
+      </header>
+      <section class="post-body pt5 pb4">
+        {{ .Content }}
+      </section>
+    </article>
+    {{ if .Params.show_comments }}
+      {{ partial "shared/comments.html" . }}
+    {{ end }}
+  </section>
+</main>
+{{ end }}

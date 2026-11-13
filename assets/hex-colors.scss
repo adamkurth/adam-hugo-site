@@ -1,16 +1,36 @@
-// set custom hex colors 
-$siteBgColorCustom: #e3e3da;
-$sidebarBgColorCustom: #dbdbd2;
-$textColorCustom: #666260;
-$sidebarTextColorCustom: #666260;
-$headlineColorCustom: #103742;
-$headingColorCustom: #103742;
-$bodyLinkColorCustom: #c4001a;
-$navLinkColorCustom: #c4001a;
-$sidebarLinkColorCustom: #c4001a;
-$footerTextColorCustom: #918f8d;
-$buttonTextColorCustom: #f7f7f4;
-$buttonHoverTextColorCustom: #f9f9f8;
-$buttonBgColorCustom: #103742;
-$buttonHoverBgColorCustom: #c4001a;
-$borderColorCustom: #c4beb9;
+// ---------------------------------------------------------------------------
+// Clean & minimal palette
+//
+// Near-white page, dark slate body text, one restrained deep-navy accent.
+// Chosen for legibility and for printing cleanly (the CV page is meant to be
+// printable). All text/background pairs below clear WCAG AA contrast.
+//
+// Loaded by assets/scaffold.scss because params.custom_theme = "hex-colors"
+// and params.theme is left unset. The filename must keep "hex" in it so the
+// theme treats these as hex codes and pulls in theme/set-theme.scss.
+// ---------------------------------------------------------------------------
+
+// surfaces
+$siteBgColorCustom:          #ffffff; // page background
+$sidebarBgColorCustom:       #f4f6f8; // sidebar / sticky panels
+$borderColorCustom:          #e1e5ea; // hairlines, table + blockquote rules
+
+// body text
+$textColorCustom:            #2f363d; // dark slate, ~12:1 on white
+$sidebarTextColorCustom:     #2f363d;
+
+// headings
+$headlineColorCustom:        #0f171e; // big hero display type
+$headingColorCustom:         #0f171e; // h1-h6
+
+// links
+$bodyLinkColorCustom:        #15476b; // deep navy accent, ~8:1 on white
+$navLinkColorCustom:         #0f171e; // header/footer nav + brand
+$sidebarLinkColorCustom:     #15476b;
+$footerTextColorCustom:      #6b757e; // muted footer meta
+
+// buttons
+$buttonTextColorCustom:      #ffffff;
+$buttonHoverTextColorCustom: #ffffff;
+$buttonBgColorCustom:        #0f171e;
+$buttonHoverBgColorCustom:   #15476b;

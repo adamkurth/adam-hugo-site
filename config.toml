@@ -1,16 +1,14 @@
 baseURL      = "https://adammkurth.netlify.app"
 theme        = "hugo-apero"
 languageCode = "en"
-title        = "Home"
-author       = "Adam Kurth"
-copyright    = ""
+title        = "Adam M. Kurth"
+author       = "Adam M. Kurth"
+copyright    = "&copy; 2026 Adam M. Kurth"
 googleAnalytics = ""
-#disqusShortname = "" # see params.comments to use utterances or giscus instead of Disqus
 metaDataFormat  = "yaml"
 footnoteReturnLinkContents = "&#8617;" # ↩
-# set deliberately low for testing choose your preffered number based on the blog layout you've chosen
 [pagination]
-  pagerSize = 5
+  pagerSize = 10
 preserveTaxonomyNames = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
@@ -19,92 +17,75 @@ enableEmoji = true
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark.renderer]
     unsafe = true  # Enable user to embed HTML snippets in Markdown content.
-    hardwraps = false 
+    hardwraps = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 2
     ordered = false
   [markup.highlight]
-    # one of: https://xyproto.github.io/splash/docs/ 
+    # one of: https://xyproto.github.io/splash/docs/
     style = "github"
-    
+
 [params]
-  orgName = "RStudio"
-  orgLocal = "Anywhere"
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  # favicon     = "/img/github-logo.png"   # put a 32×32 icon or remove this line
-  
-  mainSections = ["about", "projects", "patient-advocacy", "contact"]
+  orgName = "Adam M. Kurth"
+  orgLocal = ""
+  description = "Adam M. Kurth is a Ph.D. student in Biostatistics at Brown University working on causal inference with real-world healthcare data — target trial emulation, inverse probability weighting, and survival analysis."
+
+  mainSections = ["research"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
   socialInHeader = true
   socialInFooter = true
-  # Default image for social sharing and search engines. 
+  # Default image for social sharing and search engines.
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/papillons.jpg"
-  # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "apreshill"
-  
-  # use a built-in color theme
-  # one of: earth / forest / grayscale / magma / paper / peach / plum /
-  #         poppy / primer / sky / violet / water 
-  theme = "plum"
-  
-  # or, leave theme empty & make your own palette
-  # see docs at https://hugo-apero.netlify.app/blog/color-themes/
-  # the custom scss file must be in the assets/ folder
-  # add the filename name here, without extension
-  # to use hex colors instead of named tachyons colors, include "hex" in filename
+  sharing_image = "/img/headshot-web.jpeg"
+
+  # NOTE: Params.theme takes precedence over Params.custom_theme (see
+  # assets/scaffold.scss). Leave `theme` commented out so that the custom
+  # palette in assets/hex-colors.scss is the one that actually renders.
+  # built-ins: earth / forest / grayscale / magma / paper / peach / plum /
+  #            poppy / primer / sky / violet / water
+  # theme = ""
+
+  # custom palette lives in assets/hex-colors.scss
+  # filename must contain "hex" to be treated as hex codes
   custom_theme = "hex-colors"
-  
-  # use an embedded font-family
-  # serif options: Fraunces / EB Garamond / Bitter
-  # sans-serif options: Commissioner / Atkinson Hyperlegible / Metropolis
-  # if you import your own fonts, name them here too
-  customtextFontFamily    = "Commissioner"
-  customheadingFontFamily = "Fraunces"
-  
-  # alternatively, leave empty and select basic font options: sans-serif or serif
-  # for more http://tachyons.io/docs/typography/font-family/
+
+  # embedded font families; only these ship complete weights:
+  #   EB Garamond (400/600 + italics), Atkinson Hyperlegible (400/700 + italics),
+  #   Fraunces (full range). Metropolis and Commissioner ship Light only, so
+  #   bold text in those faces gets synthesized by the browser.
+  # Body is the native system sans (San Francisco / Segoe UI / Roboto): crisp at
+  # small sizes, nothing to download, and plain lining numerals — Atkinson
+  # Hyperlegible was tried here but its slashed zero makes every GPA and year
+  # on the CV read oddly ("3.8Ø/4.ØØ").
+  customtextFontFamily    = "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+  customheadingFontFamily = "'EB Garamond', Georgia, serif"
+
+  # fallbacks if the custom families above are removed
   textFontFamily = "sans-serif"
-  headingFontFamily = "sans-serif"
+  headingFontFamily = "serif"
 
-  # Specify use of utterances, giscus or disqus
-  comments = "utterances"
-    
-  # Configuration of https://utteranc.es/ for comments
-  [params.utterances]
-    repo_name = "apreshill/apero"
-    issue_term = "pathname" # url, pathname, or title
-    theme = "boxy-light"
-    label = "comments :crystal_ball:"
-
-  # To enable giscus, the github discussions based comment section,
-  # Follow the steps described to enable giscus and get the values
-  # needed to populate the below information.
-  # https://www.joelnitta.com/posts/2021-11-24_using-giscus/
-  [params.giscus]
-    repo = "apreshill/apero"
-    repo_id = "[REPO ID]="
-    category = "Comments"
-    category_id = "[category ID]"
-    mapping = "pathname"
-    reactions_enabled = "1"
-    emit_metadata = "0"
-    theme = "light"
-    lang = "en"
+  # Comments are disabled: this is a static professional site with no blog.
+  # Set to "utterances", "giscus" or "disqus" to enable, and configure below.
+  comments = ""
 
   # Configuration of math rendering
   [params.math]
-    renderer = "katex" # one of "mathjax" / "katex" 
+    renderer = "katex" # one of "mathjax" / "katex"
 
-  # Social icons may appear on homepage and in site header or footer
-  # Configure show/hide above - add as many as you like below
-  # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
-  # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
-  # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
-  
+  # Social icons appear in the site header and footer, and on the homepage.
+  # Icon pack "fab" = brand icons, "fas" = solid, "far" = regular.
+  #
+  # NOTE: do NOT use icon_pack = "ai" (academicons). The theme imports
+  # assets/academicons/academicons.scss but the Academicons font files were
+  # never shipped with this site, so "ai" icons render as empty boxes.
+  # Google Scholar has no Font Awesome Free glyph, hence graduation-cap.
+  [[params.social]]
+      icon      = "envelope"
+      icon_pack = "fas"
+      url       = "mailto:adam_kurth@brown.edu"
   [[params.social]]
       icon      = "github"
       icon_pack = "fab"
@@ -112,11 +93,15 @@ enableEmoji = true
   [[params.social]]
       icon      = "linkedin"
       icon_pack = "fab"
-      url       = "www.linkedin.com/in/adam-kurth"
+      url       = "https://www.linkedin.com/in/adam-kurth"
   [[params.social]]
       icon      = "orcid"
       icon_pack = "fab"
       url       = "https://orcid.org/0009-0001-7810-5713"
+  [[params.social]]
+      icon      = "graduation-cap"
+      icon_pack = "fas"
+      url       = "https://scholar.google.com/citations?user=kTkTEwIAAAAJ&hl=en"
 
 [taxonomies]
   category = "categories"
@@ -128,40 +113,39 @@ enableEmoji = true
     url   = "/about/"
     weight = 1
   [[menu.header]]
-    name  = "Projects"
-    url   = "/projects/"
+    name  = "Research"
+    url   = "/research/"
     weight = 2
   [[menu.header]]
     name  = "CV"
-    url   = "/files/cv.pdf"
-    weight = 4
+    url   = "/cv/"
+    weight = 3
   [[menu.header]]
     name  = "Advocacy"
-    url   = "/patient-advocacy/"
-    weight = 3
+    url   = "/advocacy/"
+    weight = 4
   [[menu.header]]
     name  = "Contact"
     url   = "/contact/"
-    weight = 3
-    
-  [[menu.header]] 
-# see https://gohugo.io/about/hugo-and-gdpr/    
+    weight = 5
+
+# see https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
   [privacy.disqus]
-    disable = false
+    disable = true
   [privacy.googleAnalytics]
-    disable = false
+    disable = true
     anonymizeIP = true
     respectDoNotTrack = true
   [privacy.instagram]
-    disable = false
+    disable = true
     simple = true
   [privacy.x]
-    disable = false
+    disable = true
     enableDNT = true
-    simple = false
+    simple = true
   [privacy.vimeo]
-    disable = false
+    disable = true
     enableDNT = true
     simple = true
   [privacy.youtube]
