@@ -2,3 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Hugo build output and asset cache.
+# Netlify runs `hugo` on deploy (netlify.toml: command = 'hugo',
+# publish = 'public'), so these are generated there and do not belong in git.
+public/
+resources/_gen/
+.hugo_build.lock
